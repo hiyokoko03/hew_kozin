@@ -1,9 +1,9 @@
 // ==============================================================
 // model.h	
-// ƒ‚ƒfƒ‹§Œä
+// ãƒ¢ãƒ‡ãƒ«åˆ¶å¾¡
 // 
-// §ìÒ:Kazuki Murakami		§ì“ú•tF2025/12/03	
-// XVÒ:Kazuki Murakami		XV“ú•tF2025/12/03
+// åˆ¶ä½œè€…:Kazuki Murakami		åˆ¶ä½œæ—¥ä»˜ï¼š2025/12/03	
+// æ›´æ–°è€…:Kazuki Murakami		æ›´æ–°æ—¥ä»˜ï¼š2025/12/03
 // ==============================================================
 #ifndef MODEL_H
 #define MODEL_H
@@ -35,6 +35,6 @@ struct MODEL
 MODEL* ModelLoad(const char* FileName, float scale = 1.0f);
 void ModelRelease(MODEL* model);
 
-void ModelDraw(const MODEL* model,const DirectX::XMMATRIX& mtxWorld);
+void ModelDraw(const MODEL* model, const DirectX::XMMATRIX& mtxWorld, bool useShader = true);
 
 #endif

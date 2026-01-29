@@ -1,9 +1,9 @@
 // ==============================================================
 // shader3D.h	
-// 3DƒVƒF[ƒ_[§Œä
+// 3Dã‚·ã‚§ãƒ¼ãƒ€ãƒ¼åˆ¶å¾¡
 // 
-// §ìÒ:‘ºã˜a÷		§ì“ú•tF2025/10/16	
-// XVÒ:‘ºã˜a÷		XV“ú•tF2025/10/16
+// åˆ¶ä½œè€…:æ‘ä¸Šå’Œæ¨¹		åˆ¶ä½œæ—¥ä»˜ï¼š2025/10/16	
+// æ›´æ–°è€…:æ‘ä¸Šå’Œæ¨¹		æ›´æ–°æ—¥ä»˜ï¼š2025/10/16
 // ==============================================================
 #ifndef SHADER3D_H
 #define	SHADER3D_H
@@ -18,6 +18,8 @@ void Shader3D_Finalize();
 void Shader3D_SetWorldMatrix(const DirectX::XMMATRIX& matrix);
 void Shader3D_SetViewMatrix(const DirectX::XMMATRIX& matrix);
 void Shader3D_SetProjMatrix(const DirectX::XMMATRIX& matrix);
+void Shader3D_SetLightMatrices(const DirectX::XMMATRIX& view, const DirectX::XMMATRIX& proj);
+void Shader3D_SetShadowPass(bool enable);
 
 void shader3D_SetMaterialDiffuse(const DirectX::XMFLOAT4 color);
 

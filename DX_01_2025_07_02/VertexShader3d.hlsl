@@ -1,9 +1,9 @@
 // ==============================================================
 // VertexShader3D.hlsl	
-// ’¸“_ƒVƒF[ƒ_[İ’è
+// é ‚ç‚¹ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼è¨­å®š
 // 
-// §ìÒ:‘ºã˜a÷		§ì“ú•tF2025/10/16	
-// XVÒ:‘ºã˜a÷		XV“ú•tF2025/10/16
+// åˆ¶ä½œè€…:æ‘ä¸Šå’Œæ¨¹		åˆ¶ä½œæ—¥ä»˜ï¼š2025/10/16	
+// æ›´æ–°è€…:æ‘ä¸Šå’Œæ¨¹		æ›´æ–°æ—¥ä»˜ï¼š2025/10/16
 // ==============================================================
 cbuffer VS_CONSTANT_BUFFER0 : register(b0)
 {
@@ -20,6 +20,12 @@ cbuffer VS_CONSTANT_BUFFER2 : register(b2)
     float4x4 proj;
 };
 
+cbuffer VS_LIGHT_BUFFER : register(b3)
+{
+    float4x4 lightView;
+    float4x4 lightProj;
+};
+
 struct VS_INPUT
 {
     float3 LocalPos : POSITION0;
@@ -34,22 +40,27 @@ struct VS_OUTPUT
     float3 normalW  : NORMAL0;
     float4 color    : COLOR0;
     float2 texcood  : TEXCOOD0;
+    float4 shadowPos : TEXCOORD1; // Added
 };
 
 VS_OUTPUT main(VS_INPUT vs_input) 
 {
-    VS_OUTPUT vs_output;      //ŒvZ‚µI‚í‚Á‚½î•ñ‚ğ“ü‚ê‚é‚à‚Ì‚ğ—pˆÓ‚·‚é
+    VS_OUTPUT vs_output;      //è¨ˆç®—ã—çµ‚ã‚ã£ãŸæƒ…å ±ã‚’å…¥ã‚Œã‚‹ã‚‚ã®ã‚’ç”¨æ„ã™ã‚‹
     
-    //À•W•ÏŠ·
+    //åº§æ¨™å¤‰æ›
     float4x4 mtxWV = mul(world,view);
     float4x4 mtxWVP = mul(mtxWV, proj);
     vs_output.posH = mul(float4(vs_input.LocalPos, 1.0f),mtxWVP);
     
-    //ƒ[ƒ‹ƒh‹óŠÔ‚Ì–@ü‚ğì‚é
+    //ãƒ¯ãƒ¼ãƒ«ãƒ‰ç©ºé–“ã®æ³•ç·šã‚’ä½œã‚‹
     vs_output.normalW = mul(float4(vs_input.normalL, 0.0f), world).xyz;
     
     vs_output.color = vs_input.color;
     vs_output.texcood = vs_input.texcood;
+
+    // Shadow Coordinates
+    float4x4 lightWVP = mul(world, mul(lightView, lightProj));
+    vs_output.shadowPos = mul(float4(vs_input.LocalPos, 1.0f), lightWVP);
     
     return vs_output;
 }
