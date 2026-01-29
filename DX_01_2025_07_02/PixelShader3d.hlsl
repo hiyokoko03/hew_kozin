@@ -65,7 +65,7 @@ float4 main(PS_INPUT ps_input) : SV_TARGET
         {
             for(int y = -1; y <= 1; ++y)
             {
-                 float depth = shadow_map.Sample(shadow_sampler, projCoords.xy + float2(x, y) * 0.001f).r; // 0.001 depends on map size (1/1024)
+                 float depth = shadow_map.SampleLevel(shadow_sampler, projCoords.xy + float2(x, y) * 0.001f, 0).r; // 0.001 depends on map size (1/1024)
                  if(depth < projCoords.z - bias)
                  {
                      shadowSum += 1.0f;
