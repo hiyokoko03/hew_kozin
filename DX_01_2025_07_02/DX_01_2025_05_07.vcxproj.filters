@@ -13,6 +13,9 @@
     <FxCompile Include="VertexShader3d.hlsl">
       <Filter>シェーダーファイル</Filter>
     </FxCompile>
+    <FxCompile Include="VertexShaderShadow.hlsl">
+      <Filter>シェーダーファイル</Filter>
+    </FxCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="active_camera.cpp">
@@ -158,6 +161,9 @@
     </ClCompile>
     <ClCompile Include="audio.cpp">
       <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="shadow_map.cpp">
+      <Filter>ソースファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +313,9 @@
     </ClInclude>
     <ClInclude Include="system_timer.h">
       <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="shadow_map.h">
+      <Filter>ソースファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

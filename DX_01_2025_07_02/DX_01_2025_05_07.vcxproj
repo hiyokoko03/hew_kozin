@@ -188,6 +188,7 @@
     <ClCompile Include="shader2D.cpp" />
     <ClCompile Include="shader3D.cpp" />
     <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="shadow_map.cpp" />
     <ClCompile Include="sprite.cpp" />
     <ClCompile Include="sprite_anim.cpp" />
     <ClCompile Include="switch.cpp" />
@@ -239,6 +240,7 @@
     <ClInclude Include="shader2D.h" />
     <ClInclude Include="shader3D.h" />
     <ClInclude Include="shadow.h" />
+    <ClInclude Include="shadow_map.h" />
     <ClInclude Include="sprite.h" />
     <ClInclude Include="sprite_anim.h" />
     <ClInclude Include="switch.h" />
@@ -279,6 +281,7 @@
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
     </FxCompile>
+    <FxCompile Include="VertexShaderShadow.hlsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

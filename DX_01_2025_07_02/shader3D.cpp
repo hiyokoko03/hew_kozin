@@ -20,6 +20,7 @@ static ID3D11InputLayout* g_pInputLayout = nullptr;
 static ID3D11Buffer* g_pVSConstantBuffer0 = nullptr;
 static ID3D11Buffer* g_pVSConstantBuffer1 = nullptr;
 static ID3D11Buffer* g_pVSConstantBuffer2 = nullptr;
+static ID3D11Buffer* g_pVSConstantBuffer3 = nullptr; // Added for Shadow/Light matrices
 static ID3D11Buffer* g_pPSConstantBuffer2 = nullptr;
 static ID3D11PixelShader* g_pPixelShader = nullptr;
 static ID3D11SamplerState* g_pSamplerState = nullptr;

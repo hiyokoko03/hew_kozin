@@ -40,6 +40,7 @@
 #include "end_game.h"
 #include "timer.h"
 #include "UI.h"
+#include "shader3D.h"
 
 #include "shadow_map.h"
 #include <fstream>
@@ -339,6 +340,8 @@ void Game_Update(double elapsed_time)
 	// ===============================================
 	// Shadow Pass
 	// ===============================================
+void Game_Draw(void)
+{
 	Direct3D_SetRenderMode(RENDER_3D);
 	g_pShadowMap->Begin(Direct3D_GetContext());
 
