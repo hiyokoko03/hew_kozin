@@ -35,9 +35,8 @@ bool Shader3D_Initialize(ID3D11Device* pDevice, ID3D11DeviceContext* pContext)
 {
 	HRESULT hr; // 戻り値格納用
 
-	// デバイスとデバイスコンテキストのチェック
-	if (!pDevice || !pContext) {
-		hal::dout << "Shader3D_Initialize() : 与えられたデバイスかコンテキストが不正です" << std::endl;
+	if (pDevice == nullptr || pContext == nullptr) {
+		hal::dout << "Shader3D_Initialize() : device or context is null" << std::endl;
 		return false;
 	}
 
