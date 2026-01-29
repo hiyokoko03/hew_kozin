@@ -1,0 +1,71 @@
+# ==========================
+#  Visual Studio / C++ / DX11 専用
+# ==========================
+
+# --- Visual Studio キャッシュ ---
+.vs/
+*.suo
+*.user
+*.userosscache
+*.ipch
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+*.cache
+
+# --- ビルド成果物（絶対に入れない）---
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
+
+# --- 中間ファイル・ログ ---
+*.tlog
+*.log
+*.pdb
+*.idb
+*.ilk
+*.sdf
+*.opensdf
+*.lastbuildstate
+
+# --- シェーダーコンパイル成果物 ---
+*.cso
+
+# --- Auto-generated / IDE junk ---
+*.aps
+*.db
+*.tmp
+*.bak
+
+# --- Python cache（使ってるので念のため）---
+__pycache__/
+*.pyc
+
+# ==========================
+#   残したいアセット類（例外）
+# ==========================
+
+# FBX などモデルは残す
+!resource/model/*.fbx
+
+# PNG/JPG などテクスチャは残す
+!resource/texture/*.png
+!resource/texture/*.jpg
+!resource/texture/*.jpeg
+
+# CSV ファイルは残す（データ駆動）
+!*.csv
+
+# HLSL（シェーダーのソース）は残す
+!*.hlsl
+
+# Python スクリプトは残す
+!*.py
+
+# ==========================
+#   プロジェクトのコード
+# ==========================
+# （当然残すので ignore しない）

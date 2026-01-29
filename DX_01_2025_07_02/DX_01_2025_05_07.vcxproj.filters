@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <FxCompile Include="PixelShader2d.hlsl">
+      <Filter>シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShader2d.hlsl">
+      <Filter>シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader3d.hlsl">
+      <Filter>シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShader3d.hlsl">
+      <Filter>シェーダーファイル</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="active_camera.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="background.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="billboard.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="cat.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="collision.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="cube.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="debug_camera.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="debug_ostream.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="debug_text.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="direct3D.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="easing.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="end_game.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="event.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="fade.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="FontWrite.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="game_effect.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソースファイル\１メイン</Filter>
+    </ClCompile>
+    <ClCompile Include="game_score.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="grid.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="keylogger.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="lamp.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="map_object.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="map_object_shadow.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="WICTextureLoader11.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="render_queue.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>ソースファイル\４リザルト</Filter>
+    </ClCompile>
+    <ClCompile Include="result_score.cpp">
+      <Filter>ソースファイル\４リザルト</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>ソースファイル\１メイン</Filter>
+    </ClCompile>
+    <ClCompile Include="shader2D.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="shader3D.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="shadow.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite_anim.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="switch.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="thief.cpp">
+      <Filter>ソースファイル\３ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>ソースファイル\２タイトル</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="system_timer.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+    <ClCompile Include="audio.cpp">
+      <Filter>ソースファイル\５システム</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="active_camera.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="background.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="audio.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="billboard.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="cat.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="collision.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="cube.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_camera.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_ostream.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_text.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="direct3D.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="easing.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="end_game.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="event.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="fade.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="FontWrite.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="game_score.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="grid.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="game_effect.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="WICTextureLoader11.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboard.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="keylogger.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="lamp.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="map_object.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="map_object_shadow.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="render_queue.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>ヘッダーファイル\４リザルト</Filter>
+    </ClInclude>
+    <ClInclude Include="result_score.h">
+      <Filter>ヘッダーファイル\４リザルト</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>ヘッダーファイル\１メイン</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>ヘッダーファイル\２タイトル</Filter>
+    </ClInclude>
+    <ClInclude Include="thief.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="shader2D.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="switch.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="shadow.h">
+      <Filter>ヘッダーファイル\３ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite_anim.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="shader3D.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+    <ClInclude Include="system_timer.h">
+      <Filter>ヘッダーファイル\５システム</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{3cae4c9e-1af0-4bac-80d3-3ea71b80efbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル">
+      <UniqueIdentifier>{0c609f61-4973-4778-88f9-65e8982d9f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シェーダーファイル">
+      <UniqueIdentifier>{ad31d267-ff69-4e45-a037-6dfbf9830db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソースファイル">
+      <UniqueIdentifier>{aafe1b99-d95a-4b2e-ad16-b8da1fe3d485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\２タイトル">
+      <UniqueIdentifier>{01202f32-88c8-45db-92b6-24bd62f04037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\３ゲーム">
+      <UniqueIdentifier>{6dd6d003-9998-449b-b19c-a8d5944231d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\４リザルト">
+      <UniqueIdentifier>{7a919d1e-0215-4843-9932-7dd02c46c48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\５システム">
+      <UniqueIdentifier>{5be61470-8939-43ad-b1f6-e38d19fe25c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\１メイン">
+      <UniqueIdentifier>{e3e773e8-48b5-4632-ad2e-c9f503138f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\１メイン">
+      <UniqueIdentifier>{39e08e38-38bc-4428-9c61-b7599d483bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\２タイトル">
+      <UniqueIdentifier>{57f12c6e-b67a-4bdd-ad19-632113e5bcc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\３ゲーム">
+      <UniqueIdentifier>{171880e2-6c58-4c1a-999c-16bcf581b11a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\４リザルト">
+      <UniqueIdentifier>{0e99d327-530c-4024-97d1-16d11e26e0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\５システム">
+      <UniqueIdentifier>{4fdc11fe-fd81-45d4-ac18-476899928fef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

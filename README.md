@@ -1,2 +1,2 @@
-# hew_kozin
-個人で確認する用
+# shadow_a
+shadowのα版プロジェクト
